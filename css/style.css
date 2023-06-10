@@ -719,18 +719,15 @@ ul.btn li:last-child {
 
 /** footer **/
 .footer {
-     background: #47988b;
-     padding-top: 85px;
-     text-align: center;
-   }
+  background: #47988b;
+  padding-top: 85px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
    
-   @media (max-width: 768px) {
-     .footer {
-       padding-top: 50px;
-       padding-bottom: 50px;
-     }
-   }
-
+ 
 .footer .titlepage {
      text-align: left;
      padding-bottom: 0px;
@@ -1192,4 +1189,17 @@ z-index: 0; /* تحديد z-index للصورة بقيمة أقل */
    
    input[type="button"]:hover {
      background-color: #3e8e41;
+   }
+
+
+   footer {
+     background-color: #3e8576;
+     color: #fff;
+     padding: 20px;
+     text-align: center;
+   }
+   
+   footer p {
+     margin: 0;
+     font-size: 14px;
    }

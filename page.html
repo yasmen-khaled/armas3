@@ -42,7 +42,7 @@
   <a link="" rel="" type="" href="https://www.facebook.com/profile.php?id=100092635201134">
   <img src="images/collage logo.png" alt="Sponsor Logo 1" width="130" height="130">
   </a>
-  <a link="" rel="" type="" href="https://www.facebook.com/profile.php?id=100089577814064">
+  <a link="" rel="" type="" href="index.html">
   <img src="images/armas.png" alt="Sponsor Logo 2" width="150" height="150">
   </a>
     <button class="print-button" onclick="window.print()">طباعة</button>
@@ -92,9 +92,6 @@
   <!--    B+   هنا  قسم المتبرعين    -->
 
 
-  <form>
-   <input type="button" value="Go back!" onclick="history.back()">
-  </form>
 
 
   
@@ -111,14 +108,15 @@
 
   <div class="card-list-container">
      <div class="card-list">
-  <% data.forEach(person => { %>
-    <div class="card">
-<div class="card-content">
-<h2><%= person.name %></h2>
-<p>Blood Type: <%= person.bloodType %></p>
-<p>Age: <%= person.age %></p>
+     <% data.forEach(person => { %>
+     <div class="card">
+     <div class="card-content">
+     <p>Age: <%= person.age %></p>
 
-<a href="tel:<%= person.phoneNo %>" class="phone-button">Call</a>
+<a href="tel:<%= person.phoneNo %>" class="phone-button">Call-1</a>
+
+<a href="tel:<%= person.phoneNo %>" class="phone-button">Call-2</a>
+
 </div>
 </div>
 <% }); %>
@@ -169,36 +167,12 @@
   <!-- end testimonial -->
   
   <!--  footer -->
-  <footer id="contact">
-     <div class="footer">
-        <div class="container">
-           <div class="row">
-              <div class="col-md-4">
-                 <div class="titlepage">
-                    <h2>Contact Us</h2>
-                 </div>
-              </div>
-              <div class="col-md-8">
-                 <ul class="location_icon">
-                    <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a>zuwara</li>
-                    <li><a href="#"><i class="fa fa-volume-control-phone" aria-hidden="true"></i></a>091-8591985</li>
-                    <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>Ngo.armas@gmail.com</li>
-                 </ul>
-              </div>
-              
-           </div>
-        </div>
-        <div class="copyright">
-           <div class="container">
-              <div class="row">
-                 <div class="col-md-12">
-                    <p>Copyright By armas organization</p>
-                 </div>
-              </div>
-           </div>
-        </div>
-     </div>
-  </footer>
+ 
+    
+  <footer>
+   <p>&copy; 2023 -  armas organization</p>
+ </footer>
+
   <!-- end footer -->
   <!-- Javascript files-->
   <script src="js/jquery.min.js"></script>

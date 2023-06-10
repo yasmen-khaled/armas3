@@ -96,35 +96,10 @@ button {
   @media (max-width: 768px) {
     #banner {
       background-size:cover;
-      height: 440px;
+      height: 500px;
     }
   }
 
-
-.top-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 60px;
-    background-color: #2B7E86;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    opacity: 1;
-    z-index: 9999; /* تحديد z-index بقيمة عالية */
-  }
-  
-  .row {
-    position: relative;
-    z-index: 1; /* تحديد z-indexللصف الذي يحوي الايقونة بقيمة أقل من الشريط */
-  }
-  
-  .row img {
-    z-index: 0; /* تحديد z-index للصورة بقيمة أقل */
-  }
 
 
 /********** banner **********/
@@ -143,13 +118,6 @@ button {
     font-family: monospace;
 }
 
-#my-name {
-   
-    font-family: Arial Rounded MT Bold;
-    font-size: 9px;
-    color: #ffcb64;
-    position: center;
-  }
 
 /********** feature (skew background) **********/
 .feature img {
@@ -227,5 +195,32 @@ p{
     font-size: smaller;
     text-align: center;
 }
-
+.contact {
+    background-color: #f8f8f8;
+    padding: 20px;
+  }
+  
+  .contact h2 {
+    margin-top: 0;
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .phone, .email, .facebook {
+    display: flex;
+    align-items: center;
+  }
+  
+  .phone i, .email i, .facebook i {
+    margin-right: 10px;
+  }
+  
+  .phone a, .email a, .facebook a {
+    color: #ffbf00;
+    text-decoration: none;
+  }
 
